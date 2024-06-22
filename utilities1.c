@@ -65,7 +65,7 @@ int	get_list_stack(char **args, t_list **head)
 	int		j;
 
 	*head = NULL;
-	i = -1;
+	i = 0;
 	while (args[++i])
 	{
 		tmp_split = ft_split(args[i], ' ');
@@ -82,5 +82,16 @@ int	get_list_stack(char **args, t_list **head)
 		}
 		free_splits(tmp_split);
 	}
+	// print_lst(*head);
 	return (1);
+}
+
+void	print_lst(t_list *head)
+{
+	t_list *current = head;
+	while (current)
+	{
+		printf("{%d}, ", current->value);
+		current = current->next;
+	}
 }

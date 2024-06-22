@@ -13,4 +13,8 @@ int	get_list_stack(char **args, t_list **head);
 void	free_list(t_list *head);
 void	exit_program(t_list *head, char **split);
 
+// Test Functions
+
+void	print_lst(t_list *head);
+
 #endif
