@@ -32,7 +32,7 @@ int	main(int ac, char **av)
 {
 	t_list	*a;
 	// t_list	*b;
-	// t_list	*clone;
+	t_list	*clone;
 
 	// b = NULL;
 	if (ac == 1)
@@ -41,7 +41,7 @@ int	main(int ac, char **av)
 		exit_error();
 	if (!get_list_stack(av, &a))
 		return (free_list(a), 0);
-	// if (!get_list_stack(av, &clone))
-	// 	return (free_list(clone), 0);
+	if (!get_list_stack(av, &clone))
+		return (free_list(a), free_list(clone), 0);
 	return (0);
 }
