@@ -1,7 +1,7 @@
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC = main.c utilities1.c rotations1.c rotations2.c ft_lstadd_back.c ft_lstnew.c ft_memcpy.c ft_strlen.c \
+SRC = main.c sort.c utilities1.c utilities2.c rotations1.c rotations2.c ft_lstadd_back.c ft_lstnew.c ft_memcpy.c ft_strlen.c \
 		ft_lstadd_front.c ft_lstprint.c ft_putstr.c ft_substr.c\
 		ft_atoi.c ft_lstlast.c ft_lstsize.c ft_split.c \
 

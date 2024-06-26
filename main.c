@@ -43,5 +43,9 @@ int	main(int ac, char **av)
 		return (free_list(a), 0);
 	if (!get_list_stack(av, &clone))
 		return (free_list(a), free_list(clone), 0);
+	if (!sort_check(a))
+	{
+				;
+	}
 	return (0);
 }
