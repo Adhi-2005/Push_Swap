@@ -39,7 +39,7 @@ void	pa(t_list **a, t_list **b)
 	tmp = *b;
 	node = ft_lstnew(tmp->value);
 	*b = tmp->next;
-	ft_lstadd_front(*a, node);
+	ft_lstadd_front(a, node);
 	free(tmp);
 	write (1, "pa\n", 3);
 }

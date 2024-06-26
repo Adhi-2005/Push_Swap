@@ -31,10 +31,10 @@ void	exit_error(void)
 int	main(int ac, char **av)
 {
 	t_list	*a;
-	// t_list	*b;
+	t_list	*b;
 	t_list	*clone;
 
-	// b = NULL;
+	b = NULL;
 	if (ac == 1)
 		return (0);
 	if (av[1] == NULL || !is_valid_av(av))
@@ -45,7 +45,9 @@ int	main(int ac, char **av)
 		return (free_list(a), free_list(clone), 0);
 	if (!sort_check(a))
 	{
-				;
+		sort_numbers(&clone);
+		assign_index_value(a, clone);
+		sorting(&a, &b);
 	}
 	return (0);
 }

@@ -85,7 +85,7 @@ void	num_sort(t_list **a, t_list **b, int size)
 		while (size > j)
 		{
 			num_shift = ((*a)->value >> i) & 1;
-			if (num_shift = 1)
+			if (num_shift == 1)
 				ra_or_rb(a, 'a');
 			else
 				pb(a, b);
@@ -104,11 +104,11 @@ void	sorting(t_list **a, t_list **b)
 	size = ft_lstsize(*a);
 	if (size == 2)
 		sa_or_sb(a, 'a');
-	if (size == 3)
+	else if (size == 3)
 		three_num_sort(a);
-	if (size == 4)
+	else if (size == 4)
 		four_num_sort(a, b);
-	if (size == 5)
+	else if (size == 5)
 		five_num_sort(a, b);
 	else
 		num_sort(a, b, size);
