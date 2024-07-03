@@ -36,7 +36,7 @@ int	main(int ac, char **av)
 
 	b = NULL;
 	if (ac == 1)
-		return (0);
+		exit_error();
 	if (av[1] == NULL || !is_valid_av(av))
 		exit_error();
 	if (!get_list_stack(av, &a))
