@@ -6,7 +6,7 @@
 /*   By: adshafee <adshafee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 02:03:12 by adshafee          #+#    #+#             */
-/*   Updated: 2024/07/05 02:03:13 by adshafee         ###   ########.fr       */
+/*   Updated: 2024/07/05 02:38:39 by adshafee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,17 @@ void	three_num_sort(t_list **a);
 
 // utilities1.c
 
-int	is_error_zero(int input, char *str);
-int	is_dup(int	input, t_list *head);
-int	get_list_stack(char **args, t_list **head);
+int		is_error_zero(int input, char *str);
+int		is_dup(int input, t_list *head);
+int		get_list_stack(char **args, t_list **head);
 
 void	free_list(t_list *head);
 void	exit_program(t_list *head, char **split);
 
 // utilities2.c
 
-int	sort_check(t_list *a);
-int	obtain_bits_value(t_list *head);
+int		sort_check(t_list *a);
+int		obtain_bits_value(t_list *head);
 
 void	sort_numbers(t_list **head);
 void	assign_index_value(t_list *a, t_list *clone);

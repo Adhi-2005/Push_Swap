@@ -6,7 +6,7 @@
 /*   By: adshafee <adshafee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 02:03:25 by adshafee          #+#    #+#             */
-/*   Updated: 2024/07/05 02:03:26 by adshafee         ###   ########.fr       */
+/*   Updated: 2024/07/05 02:40:04 by adshafee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	four_num_sort(t_list **a, t_list **b)
 		if ((*a)->value == 0)
 		{
 			pb(a, b);
-			break;
+			break ;
 		}
 		else
 			ra_or_rb(a, 'a');
@@ -71,8 +71,8 @@ void	five_num_sort(t_list **a, t_list **b)
 			ra_or_rb(a, 'a');
 	}
 	three_num_sort(a);
-	pa(a,b);
-	pa(a,b);
+	pa(a, b);
+	pa(a, b);
 	if ((*a)->value == 0)
 	{
 		sa_or_sb(a, 'a');

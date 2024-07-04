@@ -6,7 +6,7 @@
 /*   By: adshafee <adshafee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 02:03:32 by adshafee          #+#    #+#             */
-/*   Updated: 2024/07/05 02:03:33 by adshafee         ###   ########.fr       */
+/*   Updated: 2024/07/05 02:41:41 by adshafee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	is_error_zero(int input, char *str)
 		{
 			if ((str[i] == '-' || str[i] == '+')
 				&& (str[i + 1] >= '0' && str[i + 1] <= '9'))
-					i++;
+				i++;
 			while (str[i] == ' ')
 				i++;
 			if (str[i])
@@ -34,7 +34,7 @@ int	is_error_zero(int input, char *str)
 	return (0);
 }
 
-int	is_dup(int	input, t_list *head)
+int	is_dup(int input, t_list *head)
 {
 	t_list	*match_check;
 
@@ -82,7 +82,7 @@ int	get_list_stack(char **args, t_list **head)
 	{
 		tmp_split = ft_split(args[i], ' ');
 		if (!tmp_split)
-			return(0);
+			return (0);
 		j = -1;
 		while (tmp_split[++j])
 		{
@@ -94,16 +94,5 @@ int	get_list_stack(char **args, t_list **head)
 		}
 		free_splits(tmp_split);
 	}
-	// print_lst(*head);
 	return (1);
-}
-
-void	print_lst(t_list *head)
-{
-	t_list *current = head;
-	while (current)
-	{
-		printf("{%d}, ", current->value);
-		current = current->next;
-	}
 }

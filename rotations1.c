@@ -6,7 +6,7 @@
 /*   By: adshafee <adshafee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 02:03:16 by adshafee          #+#    #+#             */
-/*   Updated: 2024/07/05 02:03:17 by adshafee         ###   ########.fr       */
+/*   Updated: 2024/07/05 02:39:04 by adshafee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	sa_or_sb(t_list **head_node, char stack_name)
 {
 	int	tmp;
+
 	if (!(*head_node) || ft_lstsize(*head_node) == 1)
 		return ;
 	tmp = (*head_node)->value;

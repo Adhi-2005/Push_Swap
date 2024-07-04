@@ -6,7 +6,7 @@
 /*   By: adshafee <adshafee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 02:03:36 by adshafee          #+#    #+#             */
-/*   Updated: 2024/07/05 02:03:37 by adshafee         ###   ########.fr       */
+/*   Updated: 2024/07/05 02:41:52 by adshafee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	sort_numbers(t_list **head)
 	int		tmp;
 
 	i = *head;
-	while(i)
+	while (i)
 	{
 		j = i->next;
 		while (j)
