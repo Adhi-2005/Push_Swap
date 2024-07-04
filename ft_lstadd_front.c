@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arimoham <arimoham@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*   By: adshafee <adshafee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/27 09:16:56 by arimoham          #+#    #+#             */
-/*   Updated: 2024/01/27 09:17:19 by arimoham         ###   ########.fr       */
+/*   Created: 2024/07/05 02:01:38 by adshafee          #+#    #+#             */
+/*   Updated: 2024/07/05 02:01:41 by adshafee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
