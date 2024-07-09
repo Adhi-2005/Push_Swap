@@ -31,7 +31,7 @@ void	ss(t_list **a, t_list **b)
 {
 	int	tmp;
 
-	if (!(*a) || ft_lstsize(*a) || !(*b) || ft_lstsize(*b))
+	if (!(*a) || ft_lstsize(*a) == 1 || !(*b) || ft_lstsize(*b) == 1)
 		return ;
 	tmp = (*a)->value;
 	(*a)->value = (*a)->next->value;

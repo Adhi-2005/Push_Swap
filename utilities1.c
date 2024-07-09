@@ -6,7 +6,7 @@
 /*   By: adshafee <adshafee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 02:03:32 by adshafee          #+#    #+#             */
-/*   Updated: 2024/07/05 02:41:41 by adshafee         ###   ########.fr       */
+/*   Updated: 2024/07/09 09:51:01 by adshafee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	is_error_zero(int input, char *str)
 		while (str[i])
 		{
 			if ((str[i] == '-' || str[i] == '+')
-				&& (str[i + 1] >= '0' && str[i + 1] <= '9'))
+				&& (str[i + 1] && str[i + 1] >= '0' && str[i + 1] <= '9'))
 				i++;
 			while (str[i] == ' ')
 				i++;
@@ -52,6 +52,7 @@ void	free_list(t_list *head)
 {
 	t_list	*save;
 
+	save = head;
 	while (head)
 	{
 		save = head->next;

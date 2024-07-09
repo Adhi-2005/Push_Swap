@@ -6,7 +6,7 @@
 /*   By: adshafee <adshafee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 02:03:12 by adshafee          #+#    #+#             */
-/*   Updated: 2024/07/05 02:38:39 by adshafee         ###   ########.fr       */
+/*   Updated: 2024/07/09 09:48:56 by adshafee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,5 @@ void	pb(t_list **a, t_list **b);
 void	ra_or_rb(t_list **head, char stack_name);
 void	rr(t_list **a, t_list **b);
 void	rra_or_rrb(t_list **head, char stack_name);
-
-// Test Functions
-
-void	print_lst(t_list *head);
 
 #endif

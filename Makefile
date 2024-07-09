@@ -6,7 +6,7 @@
 #    By: adshafee <adshafee@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/05 02:03:07 by adshafee          #+#    #+#              #
-#    Updated: 2024/07/05 02:03:08 by adshafee         ###   ########.fr        #
+#    Updated: 2024/07/09 09:48:26 by adshafee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 SRC = main.c sort.c utilities1.c utilities2.c rotations1.c rotations2.c ft_lstadd_back.c ft_lstnew.c ft_memcpy.c ft_strlen.c \
 		ft_lstadd_front.c ft_lstprint.c ft_putstr.c ft_substr.c\
-		ft_atoi.c ft_lstlast.c ft_lstsize.c ft_split.c \
+		ft_atoi.c ft_lstlast.c ft_lstsize.c ft_split.c\
 
 OBJ = $(SRC:.c=.o)
 

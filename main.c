@@ -48,18 +48,20 @@ int	main(int ac, char **av)
 
 	b = NULL;
 	if (ac == 1)
-		exit_error();
+		return (0);
 	if (av[1] == NULL || !is_valid_av(av))
 		exit_error();
 	if (!get_list_stack(av, &a))
-		return (free_list(a), 0);
+		return (free_list(a), 1);
 	if (!get_list_stack(av, &clone))
-		return (free_list(a), free_list(clone), 0);
+		return (free_list(a), free_list(clone), 1);
 	if (!sort_check(a))
 	{
 		sort_numbers(&clone);
 		assign_index_value(a, clone);
 		sorting(&a, &b);
 	}
+	free_list(clone);
+	free_list(a);
 	return (0);
 }
