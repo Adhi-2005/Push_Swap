@@ -6,7 +6,7 @@
 /*   By: adshafee <adshafee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/05 02:03:32 by adshafee          #+#    #+#             */
-/*   Updated: 2024/07/09 09:51:01 by adshafee         ###   ########.fr       */
+/*   Updated: 2024/07/10 11:52:19 by adshafee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	is_error_zero(int input, char *str)
 			if ((str[i] == '-' || str[i] == '+')
 				&& (str[i + 1] && str[i + 1] >= '0' && str[i + 1] <= '9'))
 				i++;
-			while (str[i] == ' ')
+			while (str[i] == '0')
 				i++;
 			if (str[i])
 				return (1);
