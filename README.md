@@ -45,8 +45,10 @@ To install and run `push_swap`:
 To sort a stack of integers, run the `push_swap` executable with the integers you want to sort as command-line arguments. The program will output the sequence of operations required to sort the stack.
 
 ### Example:
-```bash
-./push_swap 5 2 9 1 6
+
+    ```bash
+    ./push_swap 5 2 9 1 6
+
 ## Algorithm Overview
 The `push_swap` project uses the Radix Sort algorithm to efficiently sort the stack of integers. Radix Sort is a non-comparative sorting algorithm that processes integers digit by digit, starting from the least significant digit to the most significant digit. This method is particularly efficient for sorting large datasets.
 
